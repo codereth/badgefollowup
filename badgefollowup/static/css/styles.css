@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    height: 100px;
     background-color: #142d4c;
     color: #ececec;
     font-family: 'Nunito', sans-serif;
@@ -21,20 +21,35 @@ header {
 }
 
 .cohortchooser {
-    background-color: #ececec;
+    padding-top: 5em;
+    background-color: white;
+    text-align: center;
 }
 
+.cohortchooser h1 {
+    margin-bottom: 2em;
+}
 div.registration {
-    margin-top: 8vh;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2em;
+    width: 100%;
     background-color: #385170;
     color: #ececec;
     
 }
+div.registration h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
 
-.form {
-    margin-left: 30vw;
+div.registration select option {
+    color: black;
 }
 
 input, select {
-    border: solid black;
+    color: white;
+    border: solid #9fd3c7;
 }
+
