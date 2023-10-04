@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <div class="cohortchooser">
+        <div class="cohorts">
+            <h1>Select Cohort</h1>
+            <div class="cohortslist">
+                <ul>
+                    <li><a href="url">Male</a></li>
+                    <li><a href="url">Female</a></li>
+                    <li><a href="url">Moms</a></li>
+                    <li><a href="url">Cheetah</a></li>
+                    <li><a href="url">Azure</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="registration">
+        <h1 class="regh1">Register trainees here</h1>
+        <div class="form">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="lname">Cohort:</label><br>
+                <select name="lname" id="lname">
+                    <option value="volvo">Male</option>
+                    <option value="saab">Female</option>
+                    <option value="mercedes">Moms</option>
+                    <option value="audi">Cheetah</option>
+                </select><br>
+                <label for="lname">Credly link:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

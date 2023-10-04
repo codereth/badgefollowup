@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #142d4c;
+    color: #ececec;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Young Serif', serif;
+
+}
+
+.cohortchooser {
+    background-color: #ececec;
+}
+
+div.registration {
+    margin-top: 8vh;
+    background-color: #385170;
+    color: #ececec;
+    
+}
+
+.form {
+    margin-left: 30vw;
+}
+
+input, select {
+    border: solid black;
+}
