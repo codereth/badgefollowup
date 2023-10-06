@@ -21,18 +21,18 @@
     <div class="registration">
         <h2 class="regh1">Register trainees here:</h2>
         <div class="form">
-            <form>
-                <label for="name">Full name:  </label>
-                <input type="text" id="name" name="name">
+            <form action="{% url 'index' %}" method="POST"> {% csrf_token %}
+                <label for="name">Full name:</label>
+                <input type="text" id="name" name="name" required>
                 <label for="cohort">Cohort:</label>
-                <select name="cohort" id="cohort">
+                <select name="cohort" id="cohort" required>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                     <option value="moms">Moms</option>
                     <option value="cheetah">Cheetah</option>
                 </select>
                 <label for="credly">Credly link:</label>
-                <input type="text" id="credly" name="credly">
+                <input type="text" id="credly" name="credly" required>
                 <input type="submit">
             </form>
         </div>

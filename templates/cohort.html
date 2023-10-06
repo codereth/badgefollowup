@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<table class="earned">
+    <tr>
+        <th>Earned badges</th>
+    </tr>
+    {% for badge in badges %}
+    <tr>
+        <td>{{ badge }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<div class="goback">
+    <div><a href="{% url 'index' %}"><button type="button" class="btn btn-primary">Go back</button></a></div>
+</div>
+{% endblock %}

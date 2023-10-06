@@ -1,15 +1,36 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content%}
+    <div class="getinfo">
+        <h1>Get trainee's earned badges</h1>
+        <form action="{% url 'cohort' %}"> {% csrf_token %}
+            <label for="credly">Enter trainee's name:</label>
+            <input type="text" id="name" name="name" required>
+            <input type="submit">
+        </form>
+    </div>
     <div class="cohortchooser">
         <div class="cohorts">
-            <h1>Select Cohort</h1>
-            <div class="cohortslist">
-                <a href="url"><button type="button" class="btn btn-primary">Male</button></a>
-                <a href="url"><button type="button" class="btn btn-primary">Female</button></a>
-                <a href="url"><button type="button" class="btn btn-primary">Moms</button></a>
-                <a href="url"><button type="button" class="btn btn-primary">Cheetah</button></a>
-            
+            <h1>Registered Trainees</h1>
+            <div class="studentslist">
+                <table class="trainees">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Cohort</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for trainee in trainees %}
+                        <tr>
+                            <td> {{ trainee.name }} </td>
+                            <td> {{ trainee.cohort }} </td>
+                        </tr>
+                        {% endfor%}
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
