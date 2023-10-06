@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #142d4c;
+    color: #ececec;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Young Serif', serif;
+
+}
+
+.getinfo {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.getinfo input, .getinfo select {
+    color: black;
+    border: solid #9fd3c7;
+    background-color: #ececec;
+}
+
+.getinfo input[type=submit] {
+    color: white;
+    border: solid #4CAF50;
+    background-color: #4CAF50;
+}
+
+.cohortchooser {
+    padding-top: 5em;
+    background-color: white;
+    text-align: center;
+}
+
+.cohortchooser h1 {
+    margin-bottom: 2em;
+}
+
+div.studentslist {
+    text-align: center;
+}
+
+table + table {
+    border-collapse: collapse;
+}
+
+table {
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+thead th, tbody td {
+    border: 1px solid black;
+}
+
+.trainees th {
+    text-align: center;
+    color: white;
+    background-color: #385170;
+}
+
+th, td {
+    padding-right: 3em;
+}
+
+.earned {
+    margin-top: 5em;
+}
+
+.earned th {
+    width: 100%;
+    text-align: center;
+    background-color: #385170;
+    color: white;
+}
+
+td {
+    padding-left: 5px;
+    text-align: left; 
+    background-color: #ececec;
+}
+
+tbody:nth-child(even) {
+    background-color: white;
+  }
+
+div.registration {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 2em;
+    width: 100%;
+    background-color: #385170;
+    color: #ececec;
+    
+}
+div.registration h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+div.registration select option {
+    color: black;
+}
+
+.registration input, .registration select {
+    color: white;
+    border: solid #9fd3c7;
+}
+
+.goback {
+    margin-top: 5em;
+    text-align: center;
+}
